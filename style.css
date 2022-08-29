@@ -284,6 +284,10 @@ ul {
     .menu-icon, .cancel-icon {
         display: block;
     }
+
+    .menu-icon_wrapper {
+        height: 100vh;
+    }
 }
 
 @media all and (max-width: 850px) {
@@ -295,6 +299,7 @@ ul {
 @media all and (max-width: 560px) {
     .left-panel {
         width: 88%;
+        height: 100vh;
     }
 
     .inputField, .selectField {
@@ -311,10 +316,22 @@ ul {
     }
     
     .input-header {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .btn {
         font-size: 20px;
+    }
+
+    .selectField {
+        font-size: 18px;
+    }
+
+    /* .text {
+        font-size: 20px;
+    } */
+
+    .column {
+        width: 95%;
     }
 }
