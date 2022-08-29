@@ -327,6 +327,10 @@ ul {
         font-size: 18px;
     }
 
+    .right-field {
+        padding-left: 15px;
+    }
+
     /* .text {
         font-size: 20px;
     } */
