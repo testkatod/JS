@@ -294,7 +294,7 @@ ul {
 
 @media all and (max-width: 560px) {
     .left-panel {
-        width: 90%;
+        width: 88%;
     }
 
     .inputField, .selectField {
@@ -304,5 +304,17 @@ ul {
     .btn {
         width: 95%;
         height: 50px;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+    
+    .input-header {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 20px;
     }
 }
