@@ -26,11 +26,16 @@ btn.addEventListener('click', () => {
     itemOngoing.classList.add('item');
     itemOngoing.classList.add('itemOngoing');
 
+    // Создаем еще один wrapper
+    const mainWrapper = document.createElement('div');
+    mainWrapper.classList.add('mainWrapper');
+
+
     // Создаем индикатор выполнения
     const circle = document.createElement('div');
     circle.classList.add('circle');
     circle.classList.add('circleNotClicked');
-    itemOngoing.appendChild(circle);
+    mainWrapper.appendChild(circle);
 
     // Создаем wrapper текстового блока внутри li
     const itemWrapper = document.createElement('div');
@@ -49,7 +54,7 @@ btn.addEventListener('click', () => {
     itemWrapper.appendChild(itemTask);
 
     // Добавляем wrapper к li
-    itemOngoing.appendChild(itemWrapper);
+    mainWrapper.appendChild(itemWrapper);
 
     // Условия для выбора картинки в блоке li (в зависимости от выбранной тематики)
     const itemIcon = document.createElement('div');
@@ -69,28 +74,30 @@ btn.addEventListener('click', () => {
         itemIcon.classList.add('item-icon_other');
         itemOngoing.classList.add('item_other');
     } 
-    itemOngoing.appendChild(itemIcon);
+    mainWrapper.appendChild(itemIcon);
 
-    // Добавляем крест к li
+
+    //Добавляем крест к li
     const itemCross = document.createElement('div');
     itemCross.classList.add('itemCross');
-    itemOngoing.appendChild(itemCross);
 
+    itemOngoing.appendChild(mainWrapper);
+
+    itemOngoing.appendChild(itemCross);
     
     // В колонку "Ongoing" добавляем весь блок li
     columnOngoing.appendChild(itemOngoing);
+
 
     // Обнуляем поля input
     inputFieldHeader.value = '';
     inputFieldTaks.value = '';
     selectField.value = 'sport';
 
-    itemCross.addEventListener('click', () => {
-        column.removeChild(itemOngoing);
-    })
+    
 
     // EventListener на клик на элементу
-    itemOngoing.addEventListener('click', () => {
+    mainWrapper.addEventListener('click', () => {
 
         // Проверка на наличие класса itemCompleted: если есть, элемент в колонке itemCompleted и надо перенести в колонку itemOngoing и наоборот
         if (itemOngoing.classList.contains('itemCompleted')) {
@@ -105,6 +112,17 @@ btn.addEventListener('click', () => {
         }
        
     })
+
+    itemCross.addEventListener('click', () => {
+        if (itemOngoing.classList.contains('itemCompleted')) {
+            columnCompleted.removeChild(itemOngoing)
+        } else {
+            columnOngoing.removeChild(itemOngoing)
+        }
+
+    })
+
+   
 
 })
 
