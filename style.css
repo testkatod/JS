@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.icon-header {
+    font-family: 'Silkscreen', cursive;
+    margin: auto 0;
+    padding-left: 15px;
+}
+
+.cancel-icon {
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: none;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+}
+
+.menu-icon_wrapper {
+    border-right: 1px solid rgb(227, 227, 227);
+    height: 100vh;
+    position: sticky;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-wrapper {
+    display: flex;
+    padding-top: 10px;
+}
+
+.header {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.container-main {
+    display: flex;
+}
+
+.left-panel {
+    background: rgb(76, 76, 76);
+    color: white;
+    height: 100vh;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.left-panel_added {
+    display: block;
+    
+}
+
+.text {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.input-header {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.inputField {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid rgb(9, 165, 126);
+    color: white;
+    width: 80%;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selectField {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid rgb(9, 165, 126);
+    color: white;
+    width: 80%;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.selectOption {
+    color: black;
+}
+
+.btn {
+    margin: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background: transparent;
+    color: white;
+    border: 1px solid rgb(9, 165, 126);
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}   
+
+.form-wrapper {
+    padding: 20px 0;
+}
+
+.right-field {
+    padding-left: 50px;
+    position: relative;
+}
+
+.title-header {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(9, 165, 126);
+}
+
+.text_underheader {
+    width: 70%;
+    font-size: 13px;
+}
+
+.column-wrapper {
+    display: flex;
+}
+
+.column {
+    width: 350px;
+    margin-right: 30px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.item {
+    background: white;
+    list-style-type: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(57, 255, 189);
+    display: flex;
+    place-content: space-between;
+    margin-bottom: 15px;
+}
+
+.item_sport {
+    border: 1px solid rgb(57, 255, 189);
+}
+
+.item_education {
+    border: 1px solid rgb(74, 255, 57);
+}
+
+.item_work {
+    border: 1px solid rgb(231, 141, 164);
+}
+
+.item_hobby {
+    border: 1px solid rgb(159, 57, 255);
+}
+
+.item_other {
+    border: 1px solid rgb(255, 169, 57);
+}
+
+.item:hover {
+    box-shadow: 3px 5px 10px rgb(216, 216, 216);
+    transition: all 1s ease;
+}
+
+.item-icon_sport {
+    width: 60px;
+    height: 60px;
+    background: url('./img/sport.png');
+    background-size: contain;
+}
+
+.item-icon_education {
+    width: 60px;
+    height: 60px;
+    background: url('./img/education.png');
+    background-size: contain;
+}
+
+.item-icon_work {
+    width: 60px;
+    height: 60px;
+    background: url('./img/work.png');
+    background-size: contain;
+}
+
+.item-icon_hobby {
+    width: 60px;
+    height: 60px;
+    background: url('./img/hobby.png');
+    background-size: contain;
+}
+
+.item-icon_other {
+    width: 60px;
+    height: 60px;
+    background: url('./img/other.png');
+    background-size: contain;
+}
+
+.item-text-wrapper {
+    width: 50%;
+}
+
+.itemCross {
+    width: 20px;
+    height: 20px;
+    background: url('./img/cross.png');
+    background-size: contain;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    margin: auto 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.circleClicked {
+    background: rgb(121, 208, 121);
+    border: none;
+    transition: all 1s ease;
+}
+
+.task-header {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.task {
+    font-size: 10px;
+}
+
+.column-header-block {
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-bottom: 25px;
+}
+
+.column-header {
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+@media all and (max-width: 1180px) {
+    .left-panel {
+        display: none;
+    }
+
+    .menu-icon, .cancel-icon {
+        display: block;
+    }
+}
+
+@media all and (max-width: 850px) {
+    .column-wrapper {
+        display: block;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .left-panel {
+        width: 90%;
+    }
+
+    .inputField, .selectField {
+        width: 95%;
+    }
+
+    .btn {
+        width: 95%;
+        height: 50px;
+    }
+}

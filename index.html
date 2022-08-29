@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="left-panel">
+            <img src="./img/cancel.png" alt="" class="cancel-icon">
+            <div class="icon-wrapper">
+                <img src="./img/icon.png" alt="" class="icon">
+                <h2 class="icon-header">To Do List</h2>
+            </div>
+            <h2 class="header">Welcome to your Task Manager!</h2>
+            <p class="text">Create you task here</p>
+            <div class="form-wrapper">
+                <div class="wrapper">
+                    <p class="input-header">Enter your task header:</p>
+                    <input type="text" class="inputField inputField_header">
+                </div>
+                <div class="wrapper">
+                    <p class="input-header">Enter your task:</p>
+                    <input type="text" class="inputField inputField_task">
+                </div>
+                <div class="wrapper">
+                    <p class="input-header">Choose a theme:</p>
+                    <select name="hero" id="" class="selectField">
+                        <option value="sport" class="selectOption">Sport</option>
+                        <option value="work" class="selectOption">Work</option>
+                        <option value="education" class="selectOption">Education</option>
+                        <option value="hobby" class="selectOption">Hobby</option>
+                        <option value="other" class="selectOption">Other</option>
+                    </select>
+                </div>
+                <button class="btn">+ add new task</button>
+            </div>
+        </div>
+        <div class="menu-icon_wrapper">
+            <img src="./img/menu-burger.png" alt="" class="menu-icon">
+        </div>
+        <div class="right-field">
+            <h2 class="title-header">Daily tasks</h2>
+            <p class="text text_underheader">In order to mark the task as completed, please click a checkbox. If you want to delete the task, you can make a double click on it.</p>
+            <div class="column-wrapper">
+                <ul class="column column_ongoing">
+                    <div class="column-header-block">
+                        <h3 class="column-header">Ongoing</h3>
+                    </div>
+                    
+                </ul>
+                <ul class="column column_completed">
+                    <div class="column-header-block">
+                        <h3 class="column-header">Completed</h3>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
