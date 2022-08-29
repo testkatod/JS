@@ -81,8 +81,10 @@ btn.addEventListener('click', () => {
     const itemCross = document.createElement('div');
     itemCross.classList.add('itemCross');
 
+    //Добавляем mainWrapper к блоку li
     itemOngoing.appendChild(mainWrapper);
 
+    //Добавляем крестик к блоку li 
     itemOngoing.appendChild(itemCross);
     
     // В колонку "Ongoing" добавляем весь блок li
@@ -96,7 +98,7 @@ btn.addEventListener('click', () => {
 
     
 
-    // EventListener на клик на элементу
+    // EventListener на клик на mainWrapper 
     mainWrapper.addEventListener('click', () => {
 
         // Проверка на наличие класса itemCompleted: если есть, элемент в колонке itemCompleted и надо перенести в колонку itemOngoing и наоборот
@@ -113,6 +115,7 @@ btn.addEventListener('click', () => {
        
     })
 
+    // EventListener на клик по крестику (вне mainWrapper)
     itemCross.addEventListener('click', () => {
         if (itemOngoing.classList.contains('itemCompleted')) {
             columnCompleted.removeChild(itemOngoing)
